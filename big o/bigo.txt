@@ -1,0 +1,26 @@
+General info on big o
+
+Describes efficiency of an algorithm
+Sometimes, things may be physically faster to deliver data by plane/car as opposed to online depending on file size
+
+Best, average, and worst case 
+
+O(n) only going over an element once 
+
+big o - less than or equal to the worst case
+big omega - at least more than the Best
+big theta - within bounds of best and worse case 
+
+O(1)      constant - accessing element in an array
+O(N)      linear - loop through array of elements
+O(LogN)   logarithmic - find an element in sorted array - when list is divided by 2 - binary search
+O(N^2)    quadratic - looking at every index in the array twice
+O(2^N)    exponential - double recursion in fibonacci
+
+Drop constants and non-dominant terms
+
+O(N) can be faster than O(1) for specific inputs 
+
+Fast computer, fast memory access, lower constant
+slow computer, slow memory access, higher constant
+

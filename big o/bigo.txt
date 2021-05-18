@@ -24,3 +24,11 @@ O(N) can be faster than O(1) for specific inputs
 Fast computer, fast memory access, lower constant
 slow computer, slow memory access, higher constant
 
+do this then when done do that is O(A+B)]
+do this for each time you do that O(A*B)
+
+Rule 1: any assignment statements and if statements that are executed once regardless of the size of the problem O(1)
+Rule 2: a simple for loop from 0 to n O(n)
+Rule 3: a nested loop of the same type takes quadratic time O(n^2)
+Rule 4: a loop in which controlling parameter is divided by two at each step O(log n)
+Rule 5: when dealing with multiple statements, just add them up 

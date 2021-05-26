@@ -80,6 +80,34 @@ class DoublyLinkedList:
                 tempNode = tempNode.next
             return "the node doesn't exist in the list"
 
+    def deleteNode(self, location):
+        if self.head is None:
+            print("There is not any element in DLL")
+        else:
+            if location == 0:
+                if self.head == self.tail:
+                    self.head = None
+                    self.tail = None
+                else:
+                    self.head = self.head.next
+                    self.head.prev = None
+            elif location == 1:
+                if self.head == self.tail:
+                    self.head = None
+                    self.tail = None
+                else:
+                    self.tail = self.tail.prev
+                    self.tail.next = None
+            else:
+                curNode = self.head
+                index = 0
+                while index < location - 1:
+                    curNode = curNode.next
+                    index += 1
+                curNode.next = curNode.next.next
+                curNode.next.prev = curNode
+            print("The node has been deleted")
+
 
 doublyLL = DoublyLinkedList()
 doublyLL.createDLL(5)
@@ -90,3 +118,5 @@ print([node.value for node in doublyLL])
 # doublyLL.traverseDLL()
 print(doublyLL.searchDLL(6))
 # doublyLL.reverseTraversalDLL()
+doublyLL.deleteNode(-1)
+print([node.value for node in doublyLL])

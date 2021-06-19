@@ -4,11 +4,22 @@
 # size of array is predefined and cant be modified
 # any element can be found by index in array
 
+'''
+Big o of array
+                                Array   
+Indexing                          Θ(1)   
+Insert/delete at beginning        Θ(n)  
+Insert/delete at end              Θ(1)   
+Insert/delete in middle           Θ(n) 
+'''
+
 from array import *
 
 # 1. create an array and traverse
 
 arr = array('i', [1, 2, 3, 4, 5])
+
+# arr = [1,2,3,4,5]
 
 for i in arr:
     print(i)

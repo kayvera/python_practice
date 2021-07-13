@@ -1,8 +1,7 @@
 from random import randint
 
-
 class Node:
-  def __init__(self, value = None):
+  def __init__(self, value=None):
     self.value = value
     self.next = None
     self.prev = None
@@ -11,10 +10,10 @@ class Node:
     return str(self.value)
 
 class LinkedList:
-  def __init__(self, values = None):
+  def __init__(self, values=None):
     self.head = None
     self.tail = None
-  
+    
   def __iter__(self):
     curNode = self.head
     while curNode:
@@ -47,6 +46,5 @@ class LinkedList:
     self.head = None
     self.tail = None
     for i in range(n):
-      self.add(randint(min_value, max_value))
+      self.add(randint(min_value,max_value))
     return self
-

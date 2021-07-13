@@ -1,5 +1,5 @@
 
-def removeDuplicates(nums: 'List[int]') -> int:
+def removeDuplicates(nums):
     if not nums:
         return 0
     slow = 0

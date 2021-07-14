@@ -13,7 +13,7 @@ class LinkedList:
   def __init__(self, values=None):
     self.head = None
     self.tail = None
-    
+      
   def __iter__(self):
     curNode = self.head
     while curNode:
@@ -48,3 +48,8 @@ class LinkedList:
     for i in range(n):
       self.add(randint(min_value,max_value))
     return self
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
